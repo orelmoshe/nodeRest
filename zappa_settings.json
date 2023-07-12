@@ -1,0 +1,10 @@
+{
+	"dev": {
+		"app_function": "run.app",
+		"profile_name": "default",
+		"project_name": "nodeRest-app",
+		"runtime": "node:alpine",
+		"s3_bucket": "xxxxxxxx",
+		"aws_region": "us-east-1"
+	}
+}

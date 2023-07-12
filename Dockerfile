@@ -1,0 +1,27 @@
+FROM node:18
+
+ARG port=5000
+
+WORKDIR /usr/nodeRest
+
+COPY package.json ./
+
+RUN rm -rf node_modules && npm install && npm cache clean --force
+
+COPY . .
+
+ENV PORT=$port
+ENV S3_ACCESS_KEY: XXXXXXXXXXXXXXXXXXXXXXX
+ENV S3_SECRET_KEY: XXXXXXXXXXXXXXXXXXXXXXX
+ENV S3_BUCKET_NAME: zappa-aj174h1ci
+ENV STORE_NAME: myLastCreator
+ENV STORAGE_DIR_NAME: tmp
+ENV EXCEL_OUTPUT_DIR_NAME: csv_tmp
+ENV MAIL_SERVICE: smtp.gmail.com 
+ENV MAIL_USER: user@gmail.com
+ENV MAIL_PASSWORD: XXXXXXXXXXXXXXXXXXXXXXX
+ENV NODEREST_AUTH_KEY: XXXX-XXXX-XXXX-XXXX-XXXX
+
+EXPOSE $port
+
+CMD ["npm", "start"]

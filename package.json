@@ -1,0 +1,34 @@
+{
+	"name": "nodeRest",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"start": "node  --experimental-modules --es-module-specifier-resolution=node  api/index.js",
+		"start:dev": "nodemon  --experimental-modules --es-module-specifier-resolution=node api/index.js",
+		"test": "mocha -w --timeout 10000 tests/**/*.js"
+	},
+	"author": "orel moshe",
+	"license": "ISC",
+	"dependencies": {
+		"@hapi/joi": "^17.1.1",
+		"amqplib": "^0.10.3",
+		"aws-sdk": "^2.1367.0",
+		"axios": "^0.21.1",
+		"cron": "^2.3.0",
+		"dotenv": "^16.0.3",
+		"express": "^4.17.1",
+		"ip": "^1.1.8",
+		"node-cache": "^5.1.2",
+		"nodemailer": "^6.9.1",
+		"xlsx": "^0.18.5"
+	},
+	"devDependencies": {
+		"@faker-js/faker": "^7.6.0",
+		"chai": "^4.3.0",
+		"chai-http": "^4.3.0",
+		"mocha": "^8.3.0",
+		"nodemon": "^2.0.3"
+	}
+}

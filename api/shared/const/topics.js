@@ -1,0 +1,7 @@
+export const Topics = {
+	CREATE_ENTITIES_TOPIC: 'CREATE_ENTITIES_TOPIC',
+};
+
+export const Subscribers = {
+	CREATE_ENTITIES_SUBSCRIBER: 'CREATE_ENTITIES_SUBSCRIBER',
+};
