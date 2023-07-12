@@ -80,10 +80,10 @@ GET:/actionIds
 
 The application using this following components:
 
-Worker Threads.
-Amazon S3 is an object storage service that offers industry-leading scalability, data availability, security, and performance.
-Cache in-memory data structure store for higher performance.
-Tests - using Mocha and Chai.
+* Worker Threads.
+* Amazon S3 is an object storage service that offers industry-leading scalability, data availability, security, and performance.
+* Cache in-memory data structure store for higher performance.
+* Tests - using Mocha and Chai.
 
 ---
 
