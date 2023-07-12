@@ -71,9 +71,9 @@ POST: /csv
 
 POST: /create-entities
 
-GET:/get-entities/:actionId
+GET: /get-entities/:actionId
 
-GET:/actionIds
+GET: /actionIds
 
 ---
 
