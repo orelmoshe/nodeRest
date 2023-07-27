@@ -11,6 +11,7 @@ RUN rm -rf node_modules && npm install && npm cache clean --force
 COPY . .
 
 ENV PORT=$port
+ENV HOST=0.0.0.0
 ENV S3_ACCESS_KEY: XXXXXXXXXXXXXXXXXXXXXXX
 ENV S3_SECRET_KEY: XXXXXXXXXXXXXXXXXXXXXXX
 ENV S3_BUCKET_NAME: zappa-aj174h1ci
