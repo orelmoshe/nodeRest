@@ -17,13 +17,13 @@ Using docker
 ```bash
 git clone https://github.com/orelmoshe/nodeRest.git
 # Building your image
-docker build . -t nodeRest
+docker build . -t node-rest
 
 # Your image will now be listed by Docker
 docker images
 
 # Run the image
-docker run -p 49160:5000 -d nodeRest # port 5000
+docker run -i -t -d  node-rest
 
 # Get container ID
 $ docker ps
@@ -38,9 +38,8 @@ docker exec -it <container id> /bin/bash
 $ docker kill <container id>
 <container id>
 
-# Confirm that the app has stopped
-$ curl -i localhost:49160
-curl: (7) Failed to connect to localhost port 49160: Connection refused
+# curl request example
+$ docker exec <container id> curl  http://<HOST>:5000/api/health
 ```
 
 Using local
@@ -59,7 +58,7 @@ npm run test
 
 ## Usage Swagger
 
-Go to http://localhost:5000/
+Go to http://localhost:5000/api
 
 ---
 
@@ -87,6 +86,10 @@ The application using this following components:
 
 ---
 
+## New Workspace (FREE)
+https://gitpod.io/new/#https://github.com/{git user name}/{repo name}
+
+---
 # links
 
 https://nodejs.org/en/docs/guides/nodejs-docker-webapp
