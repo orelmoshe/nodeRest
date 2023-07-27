@@ -23,7 +23,7 @@ app.use('/api', router);
 
 app.listen(config.PORT, config.HOST, async () => {
 	try {
-		console.log(`Running on http://${HOST}:${PORT}`);
+		console.log(`Running on http://${config.HOST}:${PORT}`);
 		await resetStorage();
 	} catch (ex) {
 		const err = `Failed to reset storage,Error:${ex}`;
